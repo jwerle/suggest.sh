@@ -3,7 +3,7 @@ BIN ?= suggest
 PREFIX ?= /usr/local
 
 install:
-	cp term.sh $(PREFIX)/bin/$(BIN)
+	cp suggest.sh $(PREFIX)/bin/$(BIN)
 
 uninstall:
 	rm -f $(PREFIX)/bin/$(BIN)
