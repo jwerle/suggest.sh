@@ -9,7 +9,7 @@ but with queries
 [bpkg](https://github.com/bpkg/bpkg)
 
 ```sh
-$ bpkg install -g suggest
+$ bpkg install -g jwerle/suggest
 ```
 
 source:
