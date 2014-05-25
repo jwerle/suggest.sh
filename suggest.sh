@@ -83,8 +83,8 @@ suggest () {
     printf "suggest: found %d result(s)\n" ${count}
     echo
     for (( i = 0; i < ${count}; ++i )); do
-      printf "  %s\n" "${found[$i]}"
-    done
+      printf "%d %s\n" $(echo -n ${found[$i]} | wc -c | tr -d ' ') "${found[$i]}"
+    done | sort -n | awk '{ print $2 }' | xargs printf '  %s\n'
   else
     echo "suggest: Couldn't anything to match \`${query}'"
     return 1
