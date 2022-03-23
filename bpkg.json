@@ -3,5 +3,8 @@
   "version": "0.0.2",
   "description": "Suggest a command based on a query found in $PATH",
   "scripts": [ "suggest.sh" ],
-  "install": "make install"
+  "install": "make install",
+  "commands": {
+    "lint": "shellcheck $BPKG_SCRIPT_SOURCES"
+  }
 }
